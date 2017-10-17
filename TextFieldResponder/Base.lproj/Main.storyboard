@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextFieldResponder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sdY-ZZ-jo5">
+                                <rect key="frame" x="40" y="100" width="295" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="llg-Ct-5Mp">
+                                <rect key="frame" x="40" y="150" width="295" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m8H-NF-yPZ">
+                                <rect key="frame" x="40" y="200" width="295" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h0h-ia-KNM">
+                                <rect key="frame" x="40" y="250" width="295" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P92-nI-4Tl">
+                                <rect key="frame" x="40" y="300" width="295" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="m8H-NF-yPZ" firstAttribute="top" secondItem="llg-Ct-5Mp" secondAttribute="bottom" constant="20" id="5Gv-cL-f44"/>
+                            <constraint firstItem="m8H-NF-yPZ" firstAttribute="trailing" secondItem="llg-Ct-5Mp" secondAttribute="trailing" id="6q9-RZ-UQl"/>
+                            <constraint firstItem="sdY-ZZ-jo5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="73Y-Wd-NEs"/>
+                            <constraint firstItem="llg-Ct-5Mp" firstAttribute="top" secondItem="sdY-ZZ-jo5" secondAttribute="bottom" constant="20" id="8iX-ZR-Zhr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sdY-ZZ-jo5" secondAttribute="trailing" constant="24" id="Fl1-mo-C4Q"/>
+                            <constraint firstItem="h0h-ia-KNM" firstAttribute="trailing" secondItem="m8H-NF-yPZ" secondAttribute="trailing" id="GbJ-Jz-sOj"/>
+                            <constraint firstItem="h0h-ia-KNM" firstAttribute="leading" secondItem="m8H-NF-yPZ" secondAttribute="leading" id="Tdv-iS-KHF"/>
+                            <constraint firstItem="llg-Ct-5Mp" firstAttribute="leading" secondItem="sdY-ZZ-jo5" secondAttribute="leading" id="WQi-fj-Qy3"/>
+                            <constraint firstItem="P92-nI-4Tl" firstAttribute="top" secondItem="h0h-ia-KNM" secondAttribute="bottom" constant="20" id="lQS-cH-Xyt"/>
+                            <constraint firstItem="m8H-NF-yPZ" firstAttribute="leading" secondItem="llg-Ct-5Mp" secondAttribute="leading" id="oOb-Nm-J6Z"/>
+                            <constraint firstItem="llg-Ct-5Mp" firstAttribute="trailing" secondItem="sdY-ZZ-jo5" secondAttribute="trailing" id="oW4-CH-nGi"/>
+                            <constraint firstItem="sdY-ZZ-jo5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="qFe-X3-jev"/>
+                            <constraint firstItem="h0h-ia-KNM" firstAttribute="top" secondItem="m8H-NF-yPZ" secondAttribute="bottom" constant="20" id="tQx-aZ-srG"/>
+                            <constraint firstItem="P92-nI-4Tl" firstAttribute="leading" secondItem="h0h-ia-KNM" secondAttribute="leading" id="uYd-qY-DJi"/>
+                            <constraint firstItem="P92-nI-4Tl" firstAttribute="trailing" secondItem="h0h-ia-KNM" secondAttribute="trailing" id="x3o-Iq-sC8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outletCollection property="textFields" destination="sdY-ZZ-jo5" collectionClass="NSMutableArray" id="qwZ-vd-uqb"/>
+                        <outletCollection property="textFields" destination="llg-Ct-5Mp" collectionClass="NSMutableArray" id="C8q-33-p8X"/>
+                        <outletCollection property="textFields" destination="m8H-NF-yPZ" collectionClass="NSMutableArray" id="6De-hy-Vqj"/>
+                        <outletCollection property="textFields" destination="h0h-ia-KNM" collectionClass="NSMutableArray" id="OTU-MJ-rhL"/>
+                        <outletCollection property="textFields" destination="P92-nI-4Tl" collectionClass="NSMutableArray" id="BlY-PJ-rvm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
